@@ -29,18 +29,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "\u{1f3f5} \u{1f3f6}"      // 🏵 🏶
+        label.text = "\u{1f3f5} \u{1fff}"      // 🏵 ῿
 
-        emojiRange(from: 0x1f300, to: 0x1fA00)
+        unicodeRange(from: 0x1f300, to: 0x1fA00)
     }
 
-    func emojiRange(from: Int, to: Int) {
-        for emojiNumeric in from...to {
-            if let scalar = UnicodeScalar(emojiNumeric) {
-                let emoji = Character(scalar)
-                let avail = emoji.emojiAvailable()
-                let hex = String(format: "0x%x", emojiNumeric)
-                print("\(emoji) \(hex) is \(avail ? "" : "not ")available")
+    func unicodeRange(from: Int, to: Int) {
+        for unicodeNumeric in from...to {
+            if let scalar = UnicodeScalar(unicodeNumeric) {
+                let unicode = Character(scalar)
+                let avail = unicode.unicodeAvailable()
+                let hex = String(format: "0x%x", unicodeNumeric)
+                print("\(unicode) \(hex) is \(avail ? "" : "not ")available")
             }
         }
     }

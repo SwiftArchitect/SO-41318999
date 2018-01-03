@@ -1,5 +1,5 @@
 //
-//  Character+EmojiTests.swift
+//  Character+UnicodeTests.swift
 //  UnitTests
 //
 //  Copyright © 2018 Xavier Schott
@@ -24,7 +24,7 @@
 
 import XCTest
 
-class Character_EmojiTests: XCTestCase {
+class Character_UnicodeTests: XCTestCase {
 
     func testAgainstValidCharacters() {
         let codes:[Character] = [
@@ -32,7 +32,7 @@ class Character_EmojiTests: XCTestCase {
             "\u{1f600}" // 😀
         ]
         for code in codes {
-            XCTAssertTrue(code.emojiAvailable())
+            XCTAssertTrue(code.unicodeAvailable())
         }
     }
 
@@ -42,7 +42,7 @@ class Character_EmojiTests: XCTestCase {
             "\u{1f84c}"     // 🡌
         ]
         for code in codes {
-            XCTAssertFalse(code.emojiAvailable())
+            XCTAssertFalse(code.unicodeAvailable())
         }
     }
 
@@ -52,7 +52,7 @@ class Character_EmojiTests: XCTestCase {
             "\u{1F476}\u{1F3FE}"                    // 👶🏾
         ]
         for code in codes {
-            XCTAssertTrue(code.emojiAvailable())
+            XCTAssertTrue(code.unicodeAvailable())
         }
     }
 }

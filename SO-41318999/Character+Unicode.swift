@@ -1,5 +1,5 @@
 //
-//  Character+Emoji.swift
+//  Character+Unicode.swift
 //  SO-41318999
 //
 //  Copyright © 2018 Xavier Schott
@@ -28,20 +28,20 @@ import UIKit
 extension Character {
 
     /// Pick a size, any size really, for a reasonable png bitmap comparison
-    private static let refEmojiSize: CGFloat = 8
+    private static let refUnicodeSize: CGFloat = 8
 
-    /// U+1F3f6 is merely one of the many characters not yet implemented (or defined).
-    /// It thus prints a 🏶 question mark, as do all the unavailable characters.
+    /// U+1FFF is merely one of the many unicode characters not yet implemented (or defined).
+    /// It thus prints a ῿ question mark, as do all the unavailable characters.
     /// All unavailable unicode characters share the same question mark [?] bitmap
-    private static let refEmojiPng = Character("\u{1f3f6}").png(ofSize: Character.refEmojiSize) // 🏶
+    private static let refUnicodePng = Character("\u{1fff}").png(ofSize: Character.refUnicodeSize) // ῿
 
-    /// Tests against the existence of a given emoji on the present OS
+    /// Tests against the existence of a given unicode glyph on the present OS
     ///
-    /// - Returns: true if this emoji will return an meaningful character (i.e, not a 🏶)
-    func emojiAvailable() -> Bool {
-        if let refEmojiPng = Character.refEmojiPng,
-            let myPng = self.png(ofSize: Character.refEmojiSize) {
-            return refEmojiPng != myPng
+    /// - Returns: true if this unicode (including emoji) will return an meaningful representation (i.e, not a ῿)
+    func unicodeAvailable() -> Bool {
+        if let refUnicodePng = Character.refUnicodePng,
+            let myPng = self.png(ofSize: Character.refUnicodeSize) {
+            return refUnicodePng != myPng
         }
         return false
     }

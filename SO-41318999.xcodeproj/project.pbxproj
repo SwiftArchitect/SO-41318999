@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC00CA461FFCC29800010CC8 /* Character+EmojiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC00CA451FFCC29800010CC8 /* Character+EmojiTests.swift */; };
-		DC00CA471FFCC2F800010CC8 /* Character+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC198B201FFCB4C500A74B4E /* Character+Emoji.swift */; };
-		DC198B211FFCB4C500A74B4E /* Character+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC198B201FFCB4C500A74B4E /* Character+Emoji.swift */; };
+		DC00CA461FFCC29800010CC8 /* Character+UnicodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC00CA451FFCC29800010CC8 /* Character+UnicodeTests.swift */; };
+		DC00CA471FFCC2F800010CC8 /* Character+Unicode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC198B201FFCB4C500A74B4E /* Character+Unicode.swift */; };
+		DC198B211FFCB4C500A74B4E /* Character+Unicode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC198B201FFCB4C500A74B4E /* Character+Unicode.swift */; };
 		DC75ABA51E1633C000CA56D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC75ABA41E1633C000CA56D7 /* AppDelegate.swift */; };
 		DC75ABA71E1633C000CA56D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC75ABA61E1633C000CA56D7 /* ViewController.swift */; };
 		DC75ABAA1E1633C000CA56D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC75ABA81E1633C000CA56D7 /* Main.storyboard */; };
@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		DC00CA3B1FFCC21000010CC8 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC00CA3F1FFCC21000010CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC00CA451FFCC29800010CC8 /* Character+EmojiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+EmojiTests.swift"; sourceTree = "<group>"; };
-		DC198B201FFCB4C500A74B4E /* Character+Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Emoji.swift"; sourceTree = "<group>"; };
+		DC00CA451FFCC29800010CC8 /* Character+UnicodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+UnicodeTests.swift"; sourceTree = "<group>"; };
+		DC198B201FFCB4C500A74B4E /* Character+Unicode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Unicode.swift"; sourceTree = "<group>"; };
 		DC75ABA11E1633C000CA56D7 /* SO-41318999.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SO-41318999.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC75ABA41E1633C000CA56D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC75ABA61E1633C000CA56D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +39,7 @@
 		DC75ABAB1E1633C000CA56D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC75ABAE1E1633C000CA56D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC75ABB01E1633C000CA56D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCA2D4DE1FFD769A0056E953 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +63,7 @@
 		DC00CA3C1FFCC21000010CC8 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC00CA451FFCC29800010CC8 /* Character+EmojiTests.swift */,
+				DC00CA451FFCC29800010CC8 /* Character+UnicodeTests.swift */,
 				DC00CA3F1FFCC21000010CC8 /* Info.plist */,
 			);
 			path = UnitTests;
@@ -71,6 +72,7 @@
 		DC75AB981E1633BF00CA56D7 = {
 			isa = PBXGroup;
 			children = (
+				DCA2D4DE1FFD769A0056E953 /* README.md */,
 				DC75ABA31E1633C000CA56D7 /* SO-41318999 */,
 				DC00CA3C1FFCC21000010CC8 /* UnitTests */,
 				DC75ABA21E1633C000CA56D7 /* Products */,
@@ -95,7 +97,7 @@
 				DC75ABAB1E1633C000CA56D7 /* Assets.xcassets */,
 				DC75ABAD1E1633C000CA56D7 /* LaunchScreen.storyboard */,
 				DC75ABB01E1633C000CA56D7 /* Info.plist */,
-				DC198B201FFCB4C500A74B4E /* Character+Emoji.swift */,
+				DC198B201FFCB4C500A74B4E /* Character+Unicode.swift */,
 			);
 			path = "SO-41318999";
 			sourceTree = "<group>";
@@ -204,8 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC00CA461FFCC29800010CC8 /* Character+EmojiTests.swift in Sources */,
-				DC00CA471FFCC2F800010CC8 /* Character+Emoji.swift in Sources */,
+				DC00CA461FFCC29800010CC8 /* Character+UnicodeTests.swift in Sources */,
+				DC00CA471FFCC2F800010CC8 /* Character+Unicode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC75ABA71E1633C000CA56D7 /* ViewController.swift in Sources */,
-				DC198B211FFCB4C500A74B4E /* Character+Emoji.swift in Sources */,
+				DC198B211FFCB4C500A74B4E /* Character+Unicode.swift in Sources */,
 				DC75ABA51E1633C000CA56D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
