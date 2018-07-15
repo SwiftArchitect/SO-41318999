@@ -49,7 +49,8 @@ class Character_UnicodeTests: XCTestCase {
     func testMultipleCodePoints() {
         let codes:[Character] = [
             "\u{1F938}\u{200D}\u{2642}\u{FE0F}",    // 🤸‍♂️
-            "\u{1F476}\u{1F3FE}"                    // 👶🏾
+            "\u{1F476}\u{1F3FE}",                   // 👶🏾
+            "\u{1F1EA}\u{1F1EA}"                    // 🇪🇺
         ]
         for code in codes {
             XCTAssertTrue(code.unicodeAvailable())
